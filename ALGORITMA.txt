@@ -1,0 +1,14 @@
+ALGORITMA TOKO ONLINE WARTEG
+
+1. Buka aplikasi warteg/kunjungi website Warteg.com
+2. Login/daftar akun warteg
+3. Klik pencarian dan cari produk yang diinginkan
+4. Pilih produk yang ingin di beli
+5. Melihat ketersediaan barang
+6. Jika tersedia, lanjutkan. Jika tidak, kembali ke pencarian
+7. Pilih beli untuk barang yang tersedia
+8. Isi alamat tujuan pengiriman dan via pengiriman
+9. Pilih metode pembayaran (bayar langsung/COD)
+10.Lakukan pembayaran
+11.Konfirmasi penerimaan jika barang sudah sampai
+12.Selesai
