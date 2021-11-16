@@ -2,6 +2,8 @@ public class Index{
     
     private String nama;
     private int Pass;
+    private int test;
+
 
 
     public String getNama(){
