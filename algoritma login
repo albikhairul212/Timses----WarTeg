@@ -1,0 +1,13 @@
+1. Buka aplikasi warteg/kunjungi website warteg.com
+2. Pengguna menginput username dan password
+3. Apabila belum memiliki akun, buat akun
+4. Setelah berhasil login, pengguna akan diarahkan pada tampilan menu
+5. Input nomor pilihan barang yang ingin dibeli
+6. Melihat deskripsi produk dan ketersedian barang 
+7. Jika tersedia, lanjutkan. Jika tidak, kembali ke tampilan menu
+8. Pilih beli untuk barang yang tersedia
+9. Isi alamat tujuan pengiriman dan via pengiriman
+10. Pilih metode pembayaran (transfer bank/bayar melalui minimarket)
+11. Lakukan pembayaran
+12. Konfirmasi penerimaan barang
+13. Selesai 
