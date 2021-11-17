@@ -2,8 +2,6 @@ public class Index{
     
     private String nama;
     private int Pass;
-    private int test;
-
 
 
     public String getNama(){
@@ -23,6 +21,8 @@ public class Index{
     public void setPass(int Pass){
         this.Pass = Pass; 
     }
+    
+
     
 
 
