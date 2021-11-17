@@ -1,0 +1,13 @@
+1. pilih metode pembayaran(via mini market/ mbanking)
+2. muncul total tagihan untuk memastikan user
+3. bila melalui mbanking, maka user memilih jenis bank
+4. muncul kode pembayaran berupa virtual account billing
+5. pengguna klik cetak kode
+6. maka kode VAB akan muncul beserta nominal tagihan
+7. pengguna mengcapture/ salin kode lalu bayar melalui aplikasi mbanking
+8. bila melalui mini market, maka user memilih jenis minimarket yang tersedia
+9. muncul kode pembayaran berupa angka unik 
+10. pengguna klik cetak kode
+11. maka kode unik akan muncul beserta nominal tagihan
+12. pengguna mengcapture kode lalu bayar tagihan ke kasir minimarket yang dipilih
+13. selesai
