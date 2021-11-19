@@ -6,6 +6,20 @@ public class Login {
     private int Pass;
 
 
+    public Login(){
+
+
+    }
+
+    public Login( String nama, int Pass){
+
+        this.nama = nama;
+        this.Pass = Pass;
+
+    }
+
+
+
     public String getNama(){
         return this.nama;
     }
