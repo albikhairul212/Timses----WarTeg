@@ -18,7 +18,11 @@ public class Main {
 
                 
         while (kondisi) {
-            
+
+        //trial
+
+        int trial = 1 ;
+
         //setter  
         System.out.println("Masukan Nama anda: " );
         nama = sNama.nextLine();
@@ -29,13 +33,37 @@ public class Main {
         Pass = sPass.nextInt();
         login.setPass(Pass);
 
-            if (nama.equals("umam") || Pass == 123      ) {
+
+
+            if (nama.equals("umam") || Pass == 123) {
             
-                kondisi = true;
+                //kondisi perulangan 3x
+                while( Pass == 123){
+                    //nama = sNama.nextLine();
+                    Pass = sPass.nextInt();    
+                    trial ++;
+                    if (trial == 3){
+                        System.out.println("Eror");
+                        System.exit(0);
+                    }
+
+                }
 
             }else{
                 kondisi = false;
             }
+
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
