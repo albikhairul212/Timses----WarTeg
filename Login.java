@@ -1,5 +1,7 @@
-public class Index{
+public class Login {
     
+
+
     private String nama;
     private int Pass;
 
@@ -21,9 +23,6 @@ public class Index{
     public void setPass(int Pass){
         this.Pass = Pass; 
     }
-    
-
-    
 
 
 }
