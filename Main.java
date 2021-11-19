@@ -1,9 +1,7 @@
 import java.util.Scanner;
 
-public class Page1 {
+public class Main {
     
-
-
 
 
     public static void main(String[] args) {
@@ -12,7 +10,7 @@ public class Page1 {
         int Pass;
         
 
-        Index login = new Index();
+        Login login = new Login();
 
         try(Scanner sNama = new Scanner(System.in)){
             try(Scanner sPass = new Scanner(System.in);){
