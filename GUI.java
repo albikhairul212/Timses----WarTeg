@@ -1,5 +1,3 @@
-//package swing_1;
-
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
