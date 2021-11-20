@@ -135,7 +135,7 @@
 											"top": 379,
 											"width": 294.9423828125,
 											"height": 13,
-											"text": "-username: String",
+											"text": "-nama: String",
 											"horizontalAlignment": 0
 										},
 										{
@@ -152,7 +152,7 @@
 											"top": 394,
 											"width": 294.9423828125,
 											"height": 13,
-											"text": "-password: String",
+											"text": "-Pass: String",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1593,7 +1593,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF9J/cbjo+CcQk="
 							},
-							"name": "username: String",
+							"name": "nama",
 							"ownedElements": [
 								{
 									"_type": "UMLConstraint",
@@ -1605,7 +1605,7 @@
 								}
 							],
 							"visibility": "private",
-							"type": ""
+							"type": "String"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1613,7 +1613,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF9J/cbjo+CcQk="
 							},
-							"name": "password",
+							"name": "Pass",
 							"visibility": "private",
 							"type": "String"
 						},
