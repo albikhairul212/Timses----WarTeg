@@ -5,6 +5,8 @@ public class TampilanAwal{
     private double hargaBarang;
     private String namaBarang;
     private String ketBarang;
+    protected double hargaBarang1;
+    protected double hargaBarang2;
 
     public TampilanAwal(){
         this.opening = opening;
@@ -29,8 +31,9 @@ public class TampilanAwal{
         this.ketBarang = keterangan;
     } 
 
-    public double getHargaBarang(){
-        return hargaBarang;
+    public void getHargaBarang(){
+       this.hargaBarang1 = 2000000;
+       this.hargaBarang2 = 3000000;
     }
 
     public void setHargaBarang(double harga){

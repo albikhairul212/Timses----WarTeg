@@ -1,9 +1,13 @@
 public class Transaksi extends TampilanAwal{
 
-    private String idTransaksi;
-    private String idPembeli;
+    protected String idTransaksi;
+    protected String idPembeli;
+    private String kodeResi;
+    private int jumlahBarang;
     private double uang;
     private double bayar;
+    private double harga;
+    
 
     public Transaksi(){
         this.idTransaksi = idTransaksi; this.idPembeli = idPembeli;
@@ -14,12 +18,33 @@ public class Transaksi extends TampilanAwal{
         this.idPembeli = idPembeli;
     }
 
-    public void totalHarga(double harga){
-        this.getHargaBarang();
+    public String getKodeResi(){
+        return kodeResi;
+    }
+
+    public void setKodeResi(){
+        this.kodeResi = kodeResi;
+    }
+
+    public int getJmlBarang(){
+        return jumlahBarang;
+    }
+
+    public void setJmlBarang(int jumlah){
+        this.jumlahBarang = jumlah;
+    }
+
+    public void totalHarga(){ 
+        
+        harga = hargaBarang1 * jumlahBarang;
     }
 
     protected void setBayar(double uang){
-        this.bayar = uang;
+        if(uang > harga){
+            double total = uang - harga;
+        }else{
+            System.out.println("Uang yang anda masukkan kurang");
+        }
     }
 
 }
