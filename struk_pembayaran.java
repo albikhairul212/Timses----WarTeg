@@ -52,4 +52,5 @@ public class struk_pembayaran extends transaksi{
     public Double totalHarga(){
         return this.getHargaBarang() * this.getJumlahBarang();
     }
+    
 }
