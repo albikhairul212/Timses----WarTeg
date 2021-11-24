@@ -51,6 +51,7 @@ public class Main {
 
             }else{
                 kondisi = false;
+                System.out.print("Berhenti");
             }
 
 
