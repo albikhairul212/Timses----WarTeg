@@ -65,7 +65,7 @@ public class Login extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/LoginNew.png"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(60, 0, 1350, 950);
+        jLabel1.setBounds(60, 0, 1350, 957);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
