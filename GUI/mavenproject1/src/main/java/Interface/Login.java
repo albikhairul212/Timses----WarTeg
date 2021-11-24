@@ -26,33 +26,48 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton2 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jPasswordField1 = new javax.swing.JPasswordField();
+        jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1825, 1046));
         getContentPane().setLayout(null);
 
-        jButton2.setText("jButton2");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        jTextField1.setBackground(java.awt.Color.gray);
+        jTextField1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jTextField1.setForeground(java.awt.Color.white);
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(450, 420, 510, 80);
+
+        jPasswordField1.setBackground(java.awt.Color.gray);
+        jPasswordField1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jPasswordField1.setForeground(java.awt.Color.white);
+        getContentPane().add(jPasswordField1);
+        jPasswordField1.setBounds(450, 580, 510, 80);
+
+        jButton1.setBackground(java.awt.Color.gray);
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton1.setForeground(java.awt.Color.white);
+        jButton1.setText("Login");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2);
-        jButton2.setBounds(810, 710, 73, 23);
+        getContentPane().add(jButton1);
+        jButton1.setBounds(600, 690, 190, 80);
 
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interface/Login_new.png"))); // NOI18N
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(-180, -90, 1970, 1200);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/LoginNew.png"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(60, 0, 1350, 950);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -90,7 +105,9 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
