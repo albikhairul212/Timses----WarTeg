@@ -37,6 +37,11 @@ public class Login extends javax.swing.JFrame {
         jTextField1.setBackground(java.awt.Color.gray);
         jTextField1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jTextField1.setForeground(java.awt.Color.white);
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jTextField1);
         jTextField1.setBounds(450, 420, 510, 80);
 
@@ -68,6 +73,10 @@ public class Login extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
