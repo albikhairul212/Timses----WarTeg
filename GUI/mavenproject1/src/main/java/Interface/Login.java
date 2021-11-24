@@ -3,7 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package Interface;
-
+//import java.awt.*;
+//import javax.swing.*;
 /**
  *
  * @author UMAM
@@ -32,8 +33,13 @@ public class Login extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBounds(new java.awt.Rectangle(10, 10, 1440, 1024));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setIconImages(null);
+        setLocation(new java.awt.Point(90, 90));
         setMaximumSize(new java.awt.Dimension(1440, 1024));
         setMinimumSize(new java.awt.Dimension(1440, 1024));
+        setSize(new java.awt.Dimension(1440, 1024));
         getContentPane().setLayout(null);
 
         jTextField1.setBackground(java.awt.Color.gray);
@@ -65,11 +71,12 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(jButton1);
         jButton1.setBounds(590, 740, 200, 80);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Sign In.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Sign.png"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(10, 0, 1440, 1024);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
