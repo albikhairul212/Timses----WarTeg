@@ -32,6 +32,8 @@ public class Login extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1440, 1024));
+        setMinimumSize(new java.awt.Dimension(1440, 1024));
         getContentPane().setLayout(null);
 
         jTextField1.setBackground(java.awt.Color.gray);
@@ -43,13 +45,13 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(450, 420, 510, 80);
+        jTextField1.setBounds(420, 460, 540, 80);
 
         jPasswordField1.setBackground(java.awt.Color.gray);
         jPasswordField1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jPasswordField1.setForeground(java.awt.Color.white);
         getContentPane().add(jPasswordField1);
-        jPasswordField1.setBounds(450, 580, 510, 80);
+        jPasswordField1.setBounds(420, 630, 550, 80);
 
         jButton1.setBackground(java.awt.Color.gray);
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -61,11 +63,11 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(600, 690, 190, 80);
+        jButton1.setBounds(590, 740, 200, 80);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/LoginNew.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Sign In.png"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(60, 0, 1350, 957);
+        jLabel1.setBounds(10, 0, 1440, 1024);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
