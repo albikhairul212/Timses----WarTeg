@@ -5,6 +5,9 @@
 package com.mycompany.halaman1;
 
 import javax.swing.JOptionPane;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
 
 /**
  *
@@ -17,6 +20,13 @@ public class HalamanAwal extends javax.swing.JFrame {
      */
     public HalamanAwal() {
         initComponents();
+        Dimension layar = Toolkit.getDefaultToolkit().getScreenSize();
+
+        // membuat titik x dan y
+        int x = layar.width / 2  - this.getSize().width / 2;
+        int y = layar.height / 2 - this.getSize().height / 2;
+        
+        this.setLocation(x, y);
     }
 
     /**
@@ -39,13 +49,13 @@ public class HalamanAwal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setIconImages(null);
         setLocationByPlatform(true);
-        setMaximumSize(new java.awt.Dimension(1440, 1024));
-        setMinimumSize(new java.awt.Dimension(1440, 1240));
+        setMaximumSize(new java.awt.Dimension(1440, 840));
+        setMinimumSize(new java.awt.Dimension(1440, 840));
         getContentPane().setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/TampilanAwal.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/tammpilaan.png"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 1440, 1024);
+        jLabel1.setBounds(0, -20, 1440, 880);
 
         ButtonLaptop.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -53,7 +63,7 @@ public class HalamanAwal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ButtonLaptop);
-        ButtonLaptop.setBounds(380, 510, 50, 50);
+        ButtonLaptop.setBounds(380, 410, 50, 50);
 
         ButtonIphone.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -61,7 +71,7 @@ public class HalamanAwal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ButtonIphone);
-        ButtonIphone.setBounds(840, 510, 60, 50);
+        ButtonIphone.setBounds(840, 410, 60, 50);
 
         ButtonWatch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,7 +79,7 @@ public class HalamanAwal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ButtonWatch);
-        ButtonWatch.setBounds(1310, 510, 50, 50);
+        ButtonWatch.setBounds(1310, 410, 50, 50);
 
         ButtonKomputer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,7 +87,7 @@ public class HalamanAwal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ButtonKomputer);
-        ButtonKomputer.setBounds(1310, 860, 50, 60);
+        ButtonKomputer.setBounds(1310, 710, 50, 60);
 
         ButtonFlash.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,7 +95,7 @@ public class HalamanAwal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ButtonFlash);
-        ButtonFlash.setBounds(840, 870, 60, 50);
+        ButtonFlash.setBounds(840, 710, 60, 50);
 
         ButtonIpad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,9 +103,10 @@ public class HalamanAwal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ButtonIpad);
-        ButtonIpad.setBounds(380, 860, 50, 50);
+        ButtonIpad.setBounds(380, 700, 50, 50);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void ButtonLaptopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonLaptopActionPerformed
