@@ -5,6 +5,8 @@
 
 package Interface;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 
 /**
@@ -18,6 +20,13 @@ public class HalamanAwal extends javax.swing.JFrame {
      */
     public HalamanAwal() {
         initComponents();
+        Dimension layar = Toolkit.getDefaultToolkit().getScreenSize();
+
+        // membuat titik x dan y
+        int x = layar.width / 2  - this.getSize().width / 2;
+        int y = layar.height / 2 - this.getSize().height / 2;
+
+        this.setLocation(x, y);
     }
 
     /**
@@ -45,9 +54,9 @@ public class HalamanAwal extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(1440, 1024));
         getContentPane().setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/TampilanAwal.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/HalamanAwal.png"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(10, 0, 1440, 1024);
+        jLabel1.setBounds(0, 0, 1440, 840);
 
         ButtonLaptop.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,32 +111,26 @@ public class HalamanAwal extends javax.swing.JFrame {
 
     private void ButtonLaptopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonLaptopActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this, "Ini Adalah Dialog Informasi");       
     }//GEN-LAST:event_ButtonLaptopActionPerformed
 
     private void ButtonIphoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonIphoneActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this, "Kamu meng-inputkan: ");
     }//GEN-LAST:event_ButtonIphoneActionPerformed
 
     private void ButtonWatchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonWatchActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this, "Kamu meng-inputkan: ");
     }//GEN-LAST:event_ButtonWatchActionPerformed
 
     private void ButtonKomputerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonKomputerActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this, "Kamu meng-inputkan: ");
     }//GEN-LAST:event_ButtonKomputerActionPerformed
 
     private void ButtonFlashActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonFlashActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this, "Kamu meng-inputkan: ");
     }//GEN-LAST:event_ButtonFlashActionPerformed
 
     private void ButtonIpadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonIpadActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this, "Kamu meng-inputkan: ");
     }//GEN-LAST:event_ButtonIpadActionPerformed
 
     /**
