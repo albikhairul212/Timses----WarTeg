@@ -3,6 +3,8 @@ package com.mycompany.halaman1;
 import javax.swing.JComponent;
 import javax.swing.JOptionPane;
 import javax.swing.plaf.basic.BasicInternalFrameTitlePane.CloseAction;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 
 /**
  *
@@ -15,8 +17,16 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
-    }
 
+        Dimension layar = Toolkit.getDefaultToolkit().getScreenSize();
+
+        // membuat titik x dan y
+        int x = layar.width / 2  - this.getSize().width / 2;
+        int y = layar.height / 2 - this.getSize().height / 2;
+        
+        this.setLocation(x, y);
+       
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

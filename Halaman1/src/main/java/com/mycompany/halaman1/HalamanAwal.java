@@ -5,6 +5,9 @@
 package com.mycompany.halaman1;
 
 import javax.swing.JOptionPane;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
 
 /**
  *
@@ -17,6 +20,13 @@ public class HalamanAwal extends javax.swing.JFrame {
      */
     public HalamanAwal() {
         initComponents();
+        Dimension layar = Toolkit.getDefaultToolkit().getScreenSize();
+
+        // membuat titik x dan y
+        int x = layar.width / 2  - this.getSize().width / 2;
+        int y = layar.height / 2 - this.getSize().height / 2;
+        
+        this.setLocation(x, y);
     }
 
     /**
@@ -29,19 +39,99 @@ public class HalamanAwal extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        ButtonLaptop = new javax.swing.JButton();
+        ButtonIphone = new javax.swing.JButton();
+        ButtonWatch = new javax.swing.JButton();
+        ButtonKomputer = new javax.swing.JButton();
+        ButtonFlash = new javax.swing.JButton();
+        ButtonIpad = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setIconImages(null);
         setLocationByPlatform(true);
-        setMinimumSize(new java.awt.Dimension(100, 100));
+        setMaximumSize(new java.awt.Dimension(1440, 840));
+        setMinimumSize(new java.awt.Dimension(1440, 840));
         getContentPane().setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/TampilanAwal.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/tammpilaan.png"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 1440, 890);
+        jLabel1.setBounds(0, -20, 1440, 880);
+
+        ButtonLaptop.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonLaptopActionPerformed(evt);
+            }
+        });
+        getContentPane().add(ButtonLaptop);
+        ButtonLaptop.setBounds(380, 410, 50, 50);
+
+        ButtonIphone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonIphoneActionPerformed(evt);
+            }
+        });
+        getContentPane().add(ButtonIphone);
+        ButtonIphone.setBounds(840, 410, 60, 50);
+
+        ButtonWatch.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonWatchActionPerformed(evt);
+            }
+        });
+        getContentPane().add(ButtonWatch);
+        ButtonWatch.setBounds(1310, 410, 50, 50);
+
+        ButtonKomputer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonKomputerActionPerformed(evt);
+            }
+        });
+        getContentPane().add(ButtonKomputer);
+        ButtonKomputer.setBounds(1310, 710, 50, 60);
+
+        ButtonFlash.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonFlashActionPerformed(evt);
+            }
+        });
+        getContentPane().add(ButtonFlash);
+        ButtonFlash.setBounds(840, 710, 60, 50);
+
+        ButtonIpad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonIpadActionPerformed(evt);
+            }
+        });
+        getContentPane().add(ButtonIpad);
+        ButtonIpad.setBounds(380, 700, 50, 50);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void ButtonLaptopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonLaptopActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ButtonLaptopActionPerformed
+
+    private void ButtonIphoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonIphoneActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ButtonIphoneActionPerformed
+
+    private void ButtonWatchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonWatchActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ButtonWatchActionPerformed
+
+    private void ButtonKomputerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonKomputerActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ButtonKomputerActionPerformed
+
+    private void ButtonFlashActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonFlashActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ButtonFlashActionPerformed
+
+    private void ButtonIpadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonIpadActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ButtonIpadActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,6 +169,12 @@ public class HalamanAwal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ButtonFlash;
+    private javax.swing.JButton ButtonIpad;
+    private javax.swing.JButton ButtonIphone;
+    private javax.swing.JButton ButtonKomputer;
+    private javax.swing.JButton ButtonLaptop;
+    private javax.swing.JButton ButtonWatch;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
