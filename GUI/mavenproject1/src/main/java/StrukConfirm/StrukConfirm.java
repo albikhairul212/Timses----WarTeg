@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Interface;
+package StrukConfirm;
 
+import Interface.*;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 
@@ -47,6 +48,7 @@ public class StrukConfirm extends javax.swing.JFrame {
         jLabel1.setBounds(0, 0, 1440, 840);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -74,6 +76,7 @@ public class StrukConfirm extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(StrukConfirm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */

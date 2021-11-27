@@ -38,13 +38,13 @@ public class HalamanAwal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         ButtonLaptop = new javax.swing.JButton();
         ButtonIphone = new javax.swing.JButton();
         ButtonWatch = new javax.swing.JButton();
         ButtonKomputer = new javax.swing.JButton();
         ButtonFlash = new javax.swing.JButton();
         ButtonIpad = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setIconImages(null);
@@ -53,10 +53,6 @@ public class HalamanAwal extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(1440, 1024));
         setSize(new java.awt.Dimension(1440, 1024));
         getContentPane().setLayout(null);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/HalamanAwal.png"))); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 1440, 840);
 
         ButtonLaptop.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,6 +101,10 @@ public class HalamanAwal extends javax.swing.JFrame {
         });
         getContentPane().add(ButtonIpad);
         ButtonIpad.setBounds(390, 850, 60, 60);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/HalamanAwal.png"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 1440, 840);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

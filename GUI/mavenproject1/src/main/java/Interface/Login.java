@@ -39,9 +39,9 @@ public class Login extends javax.swing.JFrame {
     private void initComponents() {
 
         jTextField1 = new javax.swing.JTextField();
-        jPasswordField1 = new javax.swing.JPasswordField();
-        jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        Password = new javax.swing.JPasswordField();
+        Login = new javax.swing.JButton();
+        LatarBelakang = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBounds(new java.awt.Rectangle(10, 10, 1440, 1024));
@@ -56,6 +56,11 @@ public class Login extends javax.swing.JFrame {
         jTextField1.setBackground(java.awt.Color.gray);
         jTextField1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jTextField1.setForeground(java.awt.Color.white);
+        jTextField1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField1MouseClicked(evt);
+            }
+        });
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -64,39 +69,62 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(jTextField1);
         jTextField1.setBounds(420, 460, 540, 80);
 
-        jPasswordField1.setBackground(java.awt.Color.gray);
-        jPasswordField1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jPasswordField1.setForeground(java.awt.Color.white);
-        getContentPane().add(jPasswordField1);
-        jPasswordField1.setBounds(420, 630, 550, 80);
-
-        jButton1.setBackground(java.awt.Color.gray);
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jButton1.setForeground(java.awt.Color.white);
-        jButton1.setText("Login");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Password.setBackground(java.awt.Color.gray);
+        Password.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        Password.setForeground(java.awt.Color.white);
+        Password.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                PasswordActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(590, 740, 200, 80);
+        Password.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                PasswordKeyReleased(evt);
+            }
+        });
+        getContentPane().add(Password);
+        Password.setBounds(420, 630, 550, 80);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Sign.png"))); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(10, 0, 1440, 1024);
+        Login.setBackground(java.awt.Color.gray);
+        Login.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Login.setForeground(java.awt.Color.white);
+        Login.setText("Login");
+        Login.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LoginActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Login);
+        Login.setBounds(590, 740, 200, 80);
+
+        LatarBelakang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Sign.png"))); // NOI18N
+        getContentPane().add(LatarBelakang);
+        LatarBelakang.setBounds(10, 0, 1440, 1024);
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_LoginActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1MouseClicked
+
+    private void PasswordKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PasswordKeyReleased
+        // TODO add your handling code here:
+       
+    }//GEN-LAST:event_PasswordKeyReleased
+
+    private void PasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PasswordActionPerformed
 
     /**
      * @param args the command line arguments
@@ -126,17 +154,17 @@ public class Login extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Login().setVisible(true);
+       // java.awt.EventQueue.invokeLater(new Runnable() {
+         //   public void run() {
+           //     new Login().setVisible(true);
             }
-        });
-    }
+       // });
+   // }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JLabel LatarBelakang;
+    private javax.swing.JButton Login;
+    private javax.swing.JPasswordField Password;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
