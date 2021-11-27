@@ -2,11 +2,9 @@ public class TampilanAwal{
 
     private String opening;
     private String gambarBarang;
-    private double hargaBarang;
+    protected double hargaBarang;
     private String namaBarang;
     private String ketBarang;
-    protected double hargaBarang1;
-    protected double hargaBarang2;
 
     public TampilanAwal(){
         this.opening = opening;
@@ -22,21 +20,33 @@ public class TampilanAwal{
     public void setNamaBarang(String nama_barang){
        this.namaBarang = nama_barang; 
     }
+
+    public String getNamaBarang(){
+        return namaBarang;
+    }
     
     public void setGambarBarang(String gambar){
         this.gambarBarang = gambar;
+    }
+
+    public String getGambarBarang(){
+        return gambarBarang;
     }
 
     public void setKetBarang(String keterangan){
         this.ketBarang = keterangan;
     } 
 
-    public void getHargaBarang(){
-       this.hargaBarang1 = 2000000;
-       this.hargaBarang2 = 3000000;
+    public String getKetBarang(){
+        return ketBarang;
     }
 
     public void setHargaBarang(double harga){
         this.hargaBarang = harga;
     }
+
+    public Double getHargaBarang(){
+       return hargaBarang;
+    }
+ 
 }
