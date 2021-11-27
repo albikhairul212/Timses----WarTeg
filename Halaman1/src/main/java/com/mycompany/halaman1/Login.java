@@ -1,11 +1,15 @@
-package com.mycompany.halaman1;
-
-import javax.swing.JComponent;
-import javax.swing.JOptionPane;
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.CloseAction;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ */
+package Interface;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 
+//import java.awt.*;
+//import javax.swing.*;
 /**
  *
  * @author UMAM
@@ -16,6 +20,7 @@ public class Login extends javax.swing.JFrame {
      * Creates new form Login
      */
     public Login() {
+        
         initComponents();
 
         Dimension layar = Toolkit.getDefaultToolkit().getScreenSize();
@@ -23,10 +28,12 @@ public class Login extends javax.swing.JFrame {
         // membuat titik x dan y
         int x = layar.width / 2  - this.getSize().width / 2;
         int y = layar.height / 2 - this.getSize().height / 2;
-        
+
         this.setLocation(x, y);
+        
        
     }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -36,63 +43,81 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField1 = new javax.swing.JTextField();
-        jPasswordField1 = new javax.swing.JPasswordField();
-        jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        Login = new javax.swing.JButton();
+        LatarBelakang = new javax.swing.JLabel();
+        Username = new javax.swing.JTextField();
+        Password = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBounds(new java.awt.Rectangle(10, 10, 1440, 1024));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setIconImages(null);
+        setLocation(new java.awt.Point(90, 90));
+        setMaximumSize(new java.awt.Dimension(1440, 1024));
+        setMinimumSize(new java.awt.Dimension(1440, 1024));
+        setSize(new java.awt.Dimension(1440, 1024));
         getContentPane().setLayout(null);
 
-        jTextField1.setBackground(java.awt.Color.gray);
-        jTextField1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jTextField1.setForeground(java.awt.Color.white);
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        Login.setBackground(java.awt.Color.gray);
+        Login.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Login.setForeground(java.awt.Color.white);
+        Login.setText("Login");
+        Login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                LoginActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(450, 420, 510, 80);
+        getContentPane().add(Login);
+        Login.setBounds(590, 740, 200, 80);
 
-        jPasswordField1.setBackground(java.awt.Color.gray);
-        jPasswordField1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jPasswordField1.setForeground(java.awt.Color.white);
-        getContentPane().add(jPasswordField1);
-        jPasswordField1.setBounds(450, 580, 510, 80);
+        LatarBelakang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Sign.png"))); // NOI18N
+        getContentPane().add(LatarBelakang);
+        LatarBelakang.setBounds(10, 0, 1440, 1024);
 
-        jButton1.setBackground(java.awt.Color.gray);
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jButton1.setForeground(java.awt.Color.white);
-        jButton1.setText("Login");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Username.setText("jTextField1");
+        getContentPane().add(Username);
+        Username.setBounds(420, 460, 540, 80);
+
+        Password.setText("jPasswordField1");
+        Password.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                PasswordActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(600, 690, 190, 80);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/LoginNew.png"))); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(60, 0, 1350, 950);
+        Password.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                PasswordKeyTyped(evt);
+            }
+        });
+        getContentPane().add(Password);
+        Password.setBounds(422, 630, 550, 80);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        //String nama = jTextField1.getText();
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
-        if(jTextField1.getText().equals("nabil")){
-            new HalamanAwal().setVisible(true);
+    private void LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginActionPerformed
+        // TODO add your handling code here:
+        if(Password.getPassword().equals("123")){
+            
+            
+            HalamanAwal h1 =new HalamanAwal();
+            h1.setVisible(true);
             dispose();
+            
         }
-        else{
-            JOptionPane.showMessageDialog(null, "login Gagal");
-        }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_LoginActionPerformed
+
+    private void PasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordActionPerformed
+        // TODO add your handling code here:
+       
+    }//GEN-LAST:event_PasswordActionPerformed
+
+    private void PasswordKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PasswordKeyTyped
+        // TODO add your handling code here:
+           
+           
+    }//GEN-LAST:event_PasswordKeyTyped
 
     /**
      * @param args the command line arguments
@@ -122,17 +147,17 @@ public class Login extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Login().setVisible(true);
+       // java.awt.EventQueue.invokeLater(new Runnable() {
+         //   public void run() {
+           //     new Login().setVisible(true);
             }
-        });
-    }
+       // });
+   // }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel LatarBelakang;
+    private javax.swing.JButton Login;
+    private javax.swing.JPasswordField Password;
+    private javax.swing.JTextField Username;
     // End of variables declaration//GEN-END:variables
 }
