@@ -2,14 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Interface;
+package com.mycompany.halaman1;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-//import java.awt.*;
-//import javax.swing.*;
+import java.awt.*;
+import javax.swing.*;
 /**
  *
  * @author UMAM
@@ -72,7 +72,7 @@ public class Login extends javax.swing.JFrame {
 
         LatarBelakang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Sign.png"))); // NOI18N
         getContentPane().add(LatarBelakang);
-        LatarBelakang.setBounds(10, 0, 1440, 1024);
+        LatarBelakang.setBounds(10, 0, 0, 0);
 
         Username.setText("jTextField1");
         getContentPane().add(Username);
@@ -98,9 +98,7 @@ public class Login extends javax.swing.JFrame {
 
     private void LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginActionPerformed
         // TODO add your handling code here:
-        if(Password.getPassword().equals("123")){
-            
-            
+        if(Password.getPassword().equals("123")){   
             HalamanAwal h1 =new HalamanAwal();
             h1.setVisible(true);
             dispose();
@@ -147,12 +145,12 @@ public class Login extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-       // java.awt.EventQueue.invokeLater(new Runnable() {
-         //   public void run() {
-           //     new Login().setVisible(true);
+        java.awt.EventQueue.invokeLater(new Runnable() {
+           public void run() {
+                new Login().setVisible(true);
             }
-       // });
-   // }
+        });
+   }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel LatarBelakang;
