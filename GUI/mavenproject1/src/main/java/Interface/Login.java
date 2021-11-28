@@ -28,8 +28,9 @@ public class Login extends javax.swing.JFrame {
     private void initComponents() {
 
         jTextField1 = new javax.swing.JTextField();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        password = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
+        showPassword = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -53,11 +54,11 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(jTextField1);
         jTextField1.setBounds(420, 460, 540, 80);
 
-        jPasswordField1.setBackground(java.awt.Color.gray);
-        jPasswordField1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jPasswordField1.setForeground(java.awt.Color.white);
-        getContentPane().add(jPasswordField1);
-        jPasswordField1.setBounds(420, 630, 550, 80);
+        password.setBackground(java.awt.Color.gray);
+        password.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        password.setForeground(java.awt.Color.white);
+        getContentPane().add(password);
+        password.setBounds(420, 630, 550, 80);
 
         jButton1.setBackground(java.awt.Color.gray);
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -70,6 +71,15 @@ public class Login extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1);
         jButton1.setBounds(590, 740, 200, 80);
+
+        showPassword.setText("SHOW PASS");
+        showPassword.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                showPasswordMouseClicked(evt);
+            }
+        });
+        getContentPane().add(showPassword);
+        showPassword.setBounds(420, 720, 120, 30);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Sign.png"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -86,6 +96,16 @@ public class Login extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void showPasswordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_showPasswordMouseClicked
+        if(showPassword.getText().equals("Show Password")){
+            showPassword.setText("Hide Password");
+            password.setEchoChar((char)0);
+        }else{
+            showPassword.setText("Show Password");
+            password.setEchoChar('*');
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_showPasswordMouseClicked
 
     /**
      * @param args the command line arguments
@@ -125,7 +145,8 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JPasswordField password;
+    private javax.swing.JLabel showPassword;
     // End of variables declaration//GEN-END:variables
 }
