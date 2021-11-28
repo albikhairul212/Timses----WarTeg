@@ -4,6 +4,7 @@
  */
 
 package Interface;
+import StrukConfirm.*;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -27,6 +28,7 @@ public class HalamanAwal extends javax.swing.JFrame {
         int y = layar.height / 2 - this.getSize().height / 2;
 
         this.setLocation(x, y);
+        
     }
 
     /**
@@ -39,14 +41,13 @@ public class HalamanAwal extends javax.swing.JFrame {
     private void initComponents() {
 
         ButtonLaptop = new javax.swing.JButton();
-        ButtonLaptop1 = new javax.swing.JButton();
-        ButtonLaptop2 = new javax.swing.JButton();
-        ButtonLaptop3 = new javax.swing.JButton();
-        ButtonLaptop4 = new javax.swing.JButton();
-        ButtonLaptop5 = new javax.swing.JButton();
-        ButtonLaptop6 = new javax.swing.JButton();
-        ButtonLaptop7 = new javax.swing.JButton();
-        ButtonLaptop8 = new javax.swing.JButton();
+        ButtonIphone = new javax.swing.JButton();
+        ButtonPs = new javax.swing.JButton();
+        ButtonJam = new javax.swing.JButton();
+        ButtonIpad = new javax.swing.JButton();
+        ButtonUsb = new javax.swing.JButton();
+        ButtonKamera = new javax.swing.JButton();
+        ButtonKomputer = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -64,79 +65,70 @@ public class HalamanAwal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ButtonLaptop);
-        ButtonLaptop.setBounds(650, 440, 50, 50);
+        ButtonLaptop.setBounds(300, 440, 50, 50);
 
-        ButtonLaptop1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/button +.png"))); // NOI18N
-        ButtonLaptop1.addActionListener(new java.awt.event.ActionListener() {
+        ButtonIphone.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/button +.png"))); // NOI18N
+        ButtonIphone.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonLaptop1ActionPerformed(evt);
+                ButtonIphoneActionPerformed(evt);
             }
         });
-        getContentPane().add(ButtonLaptop1);
-        ButtonLaptop1.setBounds(1330, 440, 50, 50);
+        getContentPane().add(ButtonIphone);
+        ButtonIphone.setBounds(650, 440, 50, 50);
 
-        ButtonLaptop2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/button +.png"))); // NOI18N
-        ButtonLaptop2.addActionListener(new java.awt.event.ActionListener() {
+        ButtonPs.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/button +.png"))); // NOI18N
+        ButtonPs.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonLaptop2ActionPerformed(evt);
+                ButtonPsActionPerformed(evt);
             }
         });
-        getContentPane().add(ButtonLaptop2);
-        ButtonLaptop2.setBounds(460, 600, 50, 50);
+        getContentPane().add(ButtonPs);
+        ButtonPs.setBounds(990, 440, 50, 50);
 
-        ButtonLaptop3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/button +.png"))); // NOI18N
-        ButtonLaptop3.addActionListener(new java.awt.event.ActionListener() {
+        ButtonJam.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/button +.png"))); // NOI18N
+        ButtonJam.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonLaptop3ActionPerformed(evt);
+                ButtonJamActionPerformed(evt);
             }
         });
-        getContentPane().add(ButtonLaptop3);
-        ButtonLaptop3.setBounds(650, 720, 50, 50);
+        getContentPane().add(ButtonJam);
+        ButtonJam.setBounds(1330, 440, 50, 50);
 
-        ButtonLaptop4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/button +.png"))); // NOI18N
-        ButtonLaptop4.addActionListener(new java.awt.event.ActionListener() {
+        ButtonIpad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/button +.png"))); // NOI18N
+        ButtonIpad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonLaptop4ActionPerformed(evt);
+                ButtonIpadActionPerformed(evt);
             }
         });
-        getContentPane().add(ButtonLaptop4);
-        ButtonLaptop4.setBounds(300, 720, 50, 50);
+        getContentPane().add(ButtonIpad);
+        ButtonIpad.setBounds(300, 720, 50, 50);
 
-        ButtonLaptop5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/button +.png"))); // NOI18N
-        ButtonLaptop5.addActionListener(new java.awt.event.ActionListener() {
+        ButtonUsb.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/button +.png"))); // NOI18N
+        ButtonUsb.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonLaptop5ActionPerformed(evt);
+                ButtonUsbActionPerformed(evt);
             }
         });
-        getContentPane().add(ButtonLaptop5);
-        ButtonLaptop5.setBounds(990, 720, 50, 50);
+        getContentPane().add(ButtonUsb);
+        ButtonUsb.setBounds(650, 720, 50, 50);
 
-        ButtonLaptop6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/button +.png"))); // NOI18N
-        ButtonLaptop6.addActionListener(new java.awt.event.ActionListener() {
+        ButtonKamera.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/button +.png"))); // NOI18N
+        ButtonKamera.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonLaptop6ActionPerformed(evt);
+                ButtonKameraActionPerformed(evt);
             }
         });
-        getContentPane().add(ButtonLaptop6);
-        ButtonLaptop6.setBounds(300, 440, 50, 50);
+        getContentPane().add(ButtonKamera);
+        ButtonKamera.setBounds(990, 720, 50, 50);
 
-        ButtonLaptop7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/button +.png"))); // NOI18N
-        ButtonLaptop7.addActionListener(new java.awt.event.ActionListener() {
+        ButtonKomputer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/button +.png"))); // NOI18N
+        ButtonKomputer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonLaptop7ActionPerformed(evt);
+                ButtonKomputerActionPerformed(evt);
             }
         });
-        getContentPane().add(ButtonLaptop7);
-        ButtonLaptop7.setBounds(1330, 720, 50, 50);
-
-        ButtonLaptop8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/button +.png"))); // NOI18N
-        ButtonLaptop8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonLaptop8ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(ButtonLaptop8);
-        ButtonLaptop8.setBounds(990, 440, 50, 50);
+        getContentPane().add(ButtonKomputer);
+        ButtonKomputer.setBounds(1330, 720, 50, 50);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Tampilan Awal 1440 x 840.png"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -145,41 +137,53 @@ public class HalamanAwal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void ButtonIphoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonIphoneActionPerformed
+        // TODO add your handling code here:
+        new Struk2().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_ButtonIphoneActionPerformed
+
+    private void ButtonJamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonJamActionPerformed
+        // TODO add your handling code here:
+        new Struk4().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_ButtonJamActionPerformed
+
+    private void ButtonUsbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonUsbActionPerformed
+        // TODO add your handling code here:
+        new Struk6().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_ButtonUsbActionPerformed
+
+    private void ButtonIpadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonIpadActionPerformed
+        // TODO add your handling code here:
+        new Struk5().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_ButtonIpadActionPerformed
+
+    private void ButtonKameraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonKameraActionPerformed
+        // TODO add your handling code here:
+        new Struk7().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_ButtonKameraActionPerformed
+
     private void ButtonLaptopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonLaptopActionPerformed
         // TODO add your handling code here:
+        new Struk1().setVisible(true);
+        dispose();
     }//GEN-LAST:event_ButtonLaptopActionPerformed
 
-    private void ButtonLaptop1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonLaptop1ActionPerformed
+    private void ButtonKomputerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonKomputerActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ButtonLaptop1ActionPerformed
+        new Struk8().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_ButtonKomputerActionPerformed
 
-    private void ButtonLaptop2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonLaptop2ActionPerformed
+    private void ButtonPsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonPsActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ButtonLaptop2ActionPerformed
-
-    private void ButtonLaptop3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonLaptop3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ButtonLaptop3ActionPerformed
-
-    private void ButtonLaptop4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonLaptop4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ButtonLaptop4ActionPerformed
-
-    private void ButtonLaptop5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonLaptop5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ButtonLaptop5ActionPerformed
-
-    private void ButtonLaptop6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonLaptop6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ButtonLaptop6ActionPerformed
-
-    private void ButtonLaptop7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonLaptop7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ButtonLaptop7ActionPerformed
-
-    private void ButtonLaptop8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonLaptop8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ButtonLaptop8ActionPerformed
+        new Struk3().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_ButtonPsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -212,20 +216,20 @@ public class HalamanAwal extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new HalamanAwal().setVisible(true);
+                
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ButtonIpad;
+    private javax.swing.JButton ButtonIphone;
+    private javax.swing.JButton ButtonJam;
+    private javax.swing.JButton ButtonKamera;
+    private javax.swing.JButton ButtonKomputer;
     private javax.swing.JButton ButtonLaptop;
-    private javax.swing.JButton ButtonLaptop1;
-    private javax.swing.JButton ButtonLaptop2;
-    private javax.swing.JButton ButtonLaptop3;
-    private javax.swing.JButton ButtonLaptop4;
-    private javax.swing.JButton ButtonLaptop5;
-    private javax.swing.JButton ButtonLaptop6;
-    private javax.swing.JButton ButtonLaptop7;
-    private javax.swing.JButton ButtonLaptop8;
+    private javax.swing.JButton ButtonPs;
+    private javax.swing.JButton ButtonUsb;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

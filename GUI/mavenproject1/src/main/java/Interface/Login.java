@@ -8,6 +8,7 @@ import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import java.awt.Font;
+import javax.swing.JPasswordField;
 
 //import java.awt.*;
 //import javax.swing.*;
@@ -47,9 +48,10 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        ShowPassword = new javax.swing.JLabel();
         LatarBelakang = new javax.swing.JLabel();
+        Password = new javax.swing.JPasswordField();
         Username = new javax.swing.JTextField();
-        Password = new javax.swing.JTextField();
         Login = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -62,9 +64,34 @@ public class Login extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(1440, 1024));
         getContentPane().setLayout(null);
 
+        ShowPassword.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        ShowPassword.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ShowPassword.setText("Show Password");
+        ShowPassword.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ShowPasswordMouseClicked(evt);
+            }
+        });
+        getContentPane().add(ShowPassword);
+        ShowPassword.setBounds(440, 720, 130, 20);
+
         LatarBelakang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Sign.png"))); // NOI18N
         getContentPane().add(LatarBelakang);
         LatarBelakang.setBounds(10, 0, 1440, 1024);
+
+        Password.setBackground(java.awt.Color.gray);
+        Password.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        Password.setForeground(java.awt.SystemColor.controlLtHighlight);
+        Password.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                PasswordFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                PasswordFocusLost(evt);
+            }
+        });
+        getContentPane().add(Password);
+        Password.setBounds(420, 630, 540, 80);
 
         Username.setBackground(java.awt.Color.gray);
         Username.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -92,21 +119,6 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(Username);
         Username.setBounds(420, 460, 540, 80);
 
-        Password.setBackground(java.awt.Color.gray);
-        Password.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        Password.setForeground(java.awt.SystemColor.controlLtHighlight);
-        Password.setText("Masukan Password");
-        Password.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                PasswordFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                PasswordFocusLost(evt);
-            }
-        });
-        getContentPane().add(Password);
-        Password.setBounds(420, 620, 550, 90);
-
         Login.setBackground(java.awt.Color.gray);
         Login.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         Login.setForeground(java.awt.SystemColor.controlLtHighlight);
@@ -125,15 +137,18 @@ public class Login extends javax.swing.JFrame {
 
     private void LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginActionPerformed
         // TODO add your handling code here:
-        if(Username.getText().equalsIgnoreCase("TIMSES")&& Password.getText().equalsIgnoreCase("1112021")){
-            
-            
+        String pass = "1234";
+        if(Username.getText().equalsIgnoreCase("TIMSES")&& pass.equalsIgnoreCase(Password.getText())){
             HalamanAwal h1 =new HalamanAwal();
             h1.setVisible(true);
             dispose();
             
         }else{
-            JOptionPane.showMessageDialog(this,"Salah");
+            JOptionPane.showMessageDialog(null,"Username Atau Password yang anda masukan salah !!! \n"
+                    +"Silahkan Coba Lagi");
+            Username.setText("");
+            Username.requestFocus();
+            Password.setText("");
         
         }
     }//GEN-LAST:event_LoginActionPerformed
@@ -160,17 +175,29 @@ public class Login extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_UsernameFocusLost
 
+    private void ShowPasswordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ShowPasswordMouseClicked
+        // TODO add your handling code here:
+     if(ShowPassword.getText().equals("Show Password")){
+            ShowPassword.setText("Hide Password");
+            Password.setEchoChar((char)0);
+        }else{
+            ShowPassword.setText("Show Password");
+            Password.setEchoChar('*');
+        }   
+     
+    }//GEN-LAST:event_ShowPasswordMouseClicked
+
     private void PasswordFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_PasswordFocusGained
         // TODO add your handling code here:
-        if(Password.getText().equals("Masukan Password")){
-        Password.setText("");
+        if(Password.getPassword().equals("")){
+            Password.setText("Masukan Password");
         }
     }//GEN-LAST:event_PasswordFocusGained
 
     private void PasswordFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_PasswordFocusLost
         // TODO add your handling code here:
-        if(Password.getText().equals("")){
-        Password.setText("Masukan Password");
+        if(Password.getPassword().equals("Masukan Password")){
+            Password.setText("");
         }
     }//GEN-LAST:event_PasswordFocusLost
 
@@ -212,7 +239,8 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel LatarBelakang;
     private javax.swing.JButton Login;
-    private javax.swing.JTextField Password;
+    private javax.swing.JPasswordField Password;
+    private javax.swing.JLabel ShowPassword;
     private javax.swing.JTextField Username;
     // End of variables declaration//GEN-END:variables
 }
