@@ -1,4 +1,4 @@
-public class HalamanAwal{
+public class HalamanUtama{
 
     private String opening;
     private String gambarBarang;
@@ -6,11 +6,11 @@ public class HalamanAwal{
     private String namaBarang;
     private String ketBarang;
 
-    public HalamanAwal(){
+    public HalamanUtama(){
         this.opening = opening;
     }
 
-    public HalamanAwal(String nama_barang, String gambar, String keterangan, double harga){
+    public HalamanUtama(String nama_barang, String gambar, String keterangan, double harga){
         this.namaBarang = nama_barang;
         this.gambarBarang = gambar;
         this.ketBarang = keterangan;
