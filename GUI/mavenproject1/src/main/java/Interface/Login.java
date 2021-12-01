@@ -48,19 +48,11 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-<<<<<<< HEAD
         ShowPassword = new javax.swing.JLabel();
         LatarBelakang = new javax.swing.JLabel();
         Password = new javax.swing.JPasswordField();
         Username = new javax.swing.JTextField();
         Login = new javax.swing.JButton();
-=======
-        jTextField1 = new javax.swing.JTextField();
-        password = new javax.swing.JPasswordField();
-        jButton1 = new javax.swing.JButton();
-        showPassword = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
->>>>>>> aca6ec450f6292260fdf66bde3f31287e5839940
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBounds(new java.awt.Rectangle(10, 10, 1440, 1024));
@@ -98,7 +90,6 @@ public class Login extends javax.swing.JFrame {
                 PasswordFocusLost(evt);
             }
         });
-<<<<<<< HEAD
         getContentPane().add(Password);
         Password.setBounds(420, 630, 540, 80);
 
@@ -121,22 +112,6 @@ public class Login extends javax.swing.JFrame {
             }
         });
         Username.addActionListener(new java.awt.event.ActionListener() {
-=======
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(420, 460, 540, 80);
-
-        password.setBackground(java.awt.Color.gray);
-        password.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        password.setForeground(java.awt.Color.white);
-        getContentPane().add(password);
-        password.setBounds(420, 630, 550, 80);
-
-        jButton1.setBackground(java.awt.Color.gray);
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jButton1.setForeground(java.awt.Color.white);
-        jButton1.setText("Login");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
->>>>>>> aca6ec450f6292260fdf66bde3f31287e5839940
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UsernameActionPerformed(evt);
             }
@@ -144,7 +119,6 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(Username);
         Username.setBounds(420, 460, 540, 80);
 
-<<<<<<< HEAD
         Login.setBackground(java.awt.Color.gray);
         Login.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         Login.setForeground(java.awt.SystemColor.controlLtHighlight);
@@ -156,20 +130,6 @@ public class Login extends javax.swing.JFrame {
         });
         getContentPane().add(Login);
         Login.setBounds(590, 740, 200, 80);
-=======
-        showPassword.setText("SHOW PASS");
-        showPassword.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                showPasswordMouseClicked(evt);
-            }
-        });
-        getContentPane().add(showPassword);
-        showPassword.setBounds(420, 720, 120, 30);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Sign.png"))); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(10, 0, 1440, 1024);
->>>>>>> aca6ec450f6292260fdf66bde3f31287e5839940
 
         pack();
         setLocationRelativeTo(null);
@@ -287,18 +247,10 @@ public class Login extends javax.swing.JFrame {
    // }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-<<<<<<< HEAD
     private javax.swing.JLabel LatarBelakang;
     private javax.swing.JButton Login;
     private javax.swing.JPasswordField Password;
     private javax.swing.JLabel ShowPassword;
     private javax.swing.JTextField Username;
-=======
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JPasswordField password;
-    private javax.swing.JLabel showPassword;
->>>>>>> aca6ec450f6292260fdf66bde3f31287e5839940
     // End of variables declaration//GEN-END:variables
 }
