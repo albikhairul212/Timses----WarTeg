@@ -39,6 +39,9 @@ public class Struk2 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
+        Plus.setBackground(java.awt.Color.gray);
+        Plus.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        Plus.setForeground(java.awt.SystemColor.controlLtHighlight);
         Plus.setText("+");
         Plus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -46,53 +49,70 @@ public class Struk2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Plus);
-        Plus.setBounds(850, 500, 40, 50);
+        Plus.setBounds(850, 490, 50, 50);
 
         Harga.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         Harga.setText("11");
         getContentPane().add(Harga);
-        Harga.setBounds(1000, 500, 330, 60);
+        Harga.setBounds(980, 480, 330, 60);
 
+        Cod.setBackground(java.awt.Color.gray);
+        Cod.setForeground(java.awt.SystemColor.controlLtHighlight);
+        Cod.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Cod.png"))); // NOI18N
         Cod.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CodActionPerformed(evt);
             }
         });
         getContentPane().add(Cod);
-        Cod.setBounds(790, 690, 120, 70);
+        Cod.setBounds(1060, 660, 160, 140);
 
+        Trans.setBackground(java.awt.Color.gray);
+        Trans.setForeground(java.awt.SystemColor.controlLtHighlight);
+        Trans.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Tf.png"))); // NOI18N
         Trans.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TransActionPerformed(evt);
             }
         });
         getContentPane().add(Trans);
-        Trans.setBounds(1090, 690, 120, 70);
+        Trans.setBounds(770, 660, 160, 140);
 
+        Jumlah.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         Jumlah.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JumlahActionPerformed(evt);
             }
         });
         getContentPane().add(Jumlah);
-        Jumlah.setBounds(720, 500, 130, 50);
+        Jumlah.setBounds(720, 490, 130, 50);
 
-        Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/konfirmasi IPAD.png"))); // NOI18N
+        Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/konfirmasi iphone1.png"))); // NOI18N
         getContentPane().add(Background);
         Background.setBounds(0, 0, 1440, 840);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void TransActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TransActionPerformed
         // TODO add your handling code here:
+        int a1 = Integer.valueOf(Jumlah.getText());
+        
+        if( a1 == 1){
+        new Per2().setVisible(true);
+        dispose();
+        }else if( a1 == 2){
+        new Permanen2().setVisible(true);
+        dispose();    
+        }else;
     }//GEN-LAST:event_TransActionPerformed
 
     private void PlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlusActionPerformed
         // TODO add your handling code here:
         //variables
         int a1 = Integer.valueOf(Jumlah.getText());
-        int a2 = 15_725_000;
+        int a2 = 15_725_000; // harga awal barang
         int hasil = a1 * a2 ;
         //input nilai
         Harga.setText(String.valueOf(hasil));
@@ -110,15 +130,15 @@ public class Struk2 extends javax.swing.JFrame {
 
     private void CodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CodActionPerformed
         // TODO add your handling code here:
-        int a1 = Integer.valueOf(Jumlah.getText());
+       int a1 = Integer.valueOf(Jumlah.getText());
         
         if( a1 == 1){
-        new Per1().setVisible(true);
+        new Per2().setVisible(true);
         dispose();
         }else if( a1 == 2){
-        new Permanen1().setVisible(true);
+        new Permanen2().setVisible(true);
         dispose();    
-        }
+        }else;
     }//GEN-LAST:event_CodActionPerformed
 
     /**

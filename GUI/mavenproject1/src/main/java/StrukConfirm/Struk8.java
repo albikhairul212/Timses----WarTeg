@@ -4,6 +4,10 @@
  */
 package StrukConfirm;
 
+import SHarga1.Per8;
+import SHarga2.Permanen8;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author UMAM
@@ -26,35 +30,57 @@ public class Struk8 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        Harga = new javax.swing.JLabel();
+        Plus = new javax.swing.JButton();
+        Jumlah = new javax.swing.JTextField();
+        Transfer = new javax.swing.JButton();
+        Cod = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jLabel2.setText("jLabel2");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(1010, 510, 34, 14);
+        Harga.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        getContentPane().add(Harga);
+        Harga.setBounds(974, 500, 330, 60);
 
-        jButton1.setText("jButton1");
-        getContentPane().add(jButton1);
-        jButton1.setBounds(840, 520, 50, 23);
+        Plus.setBackground(java.awt.Color.gray);
+        Plus.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        Plus.setForeground(java.awt.SystemColor.controlLtHighlight);
+        Plus.setText("+");
+        Plus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PlusActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Plus);
+        Plus.setBounds(840, 500, 50, 60);
 
-        jTextField1.setText("jTextField1");
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(720, 520, 60, 20);
+        Jumlah.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        getContentPane().add(Jumlah);
+        Jumlah.setBounds(720, 500, 120, 60);
 
-        jButton2.setText("jButton2");
-        getContentPane().add(jButton2);
-        jButton2.setBounds(820, 710, 75, 23);
+        Transfer.setBackground(java.awt.Color.gray);
+        Transfer.setForeground(java.awt.SystemColor.controlLtHighlight);
+        Transfer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Tf.png"))); // NOI18N
+        Transfer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TransferActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Transfer);
+        Transfer.setBounds(780, 660, 140, 140);
 
-        jButton3.setText("jButton3");
-        getContentPane().add(jButton3);
-        jButton3.setBounds(1100, 710, 75, 23);
+        Cod.setBackground(java.awt.Color.gray);
+        Cod.setForeground(java.awt.SystemColor.controlLtHighlight);
+        Cod.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Cod.png"))); // NOI18N
+        Cod.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CodActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Cod);
+        Cod.setBounds(1070, 660, 150, 150);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/konfirmasi PC.png"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -62,7 +88,47 @@ public class Struk8 extends javax.swing.JFrame {
         jLabel1.setBounds(0, 0, 1478, 840);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void PlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlusActionPerformed
+        // TODO add your handling code here:
+        int a1 = Integer.valueOf(Jumlah.getText());
+        int a2 = 32_398_000; // harga awal barang
+        int hasil = a1 * a2 ;
+        //input nilai
+        Harga.setText(String.valueOf(hasil));
+        if(a1 == 3){
+            JOptionPane.showMessageDialog(null,"Mohon Maaf jumlah barang yang anda input tidak cukup \n"
+                    +"Silahkan Coba Lagi");
+        }else;
+    }//GEN-LAST:event_PlusActionPerformed
+
+    private void TransferActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TransferActionPerformed
+        // TODO add your handling code here:
+         int a1 = Integer.valueOf(Jumlah.getText());
+        
+        if( a1 == 1){
+        new Per8().setVisible(true);
+        dispose();
+        }else if( a1 == 2){
+        new Permanen8().setVisible(true);
+        dispose();    
+        }else;
+    }//GEN-LAST:event_TransferActionPerformed
+
+    private void CodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CodActionPerformed
+        // TODO add your handling code here:
+         int a1 = Integer.valueOf(Jumlah.getText());
+        
+        if( a1 == 1){
+        new Per8().setVisible(true);
+        dispose();
+        }else if( a1 == 2){
+        new Permanen8().setVisible(true);
+        dispose();    
+        }else;
+    }//GEN-LAST:event_CodActionPerformed
 
     /**
      * @param args the command line arguments
@@ -100,11 +166,11 @@ public class Struk8 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton Cod;
+    private javax.swing.JLabel Harga;
+    private javax.swing.JTextField Jumlah;
+    private javax.swing.JButton Plus;
+    private javax.swing.JButton Transfer;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

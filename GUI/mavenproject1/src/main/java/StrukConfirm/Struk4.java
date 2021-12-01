@@ -4,6 +4,10 @@
  */
 package StrukConfirm;
 
+import SHarga1.Per4;
+import SHarga2.Permanen4;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author UMAM
@@ -26,43 +30,113 @@ public class Struk4 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        Harga = new javax.swing.JLabel();
+        Jumlah = new javax.swing.JTextField();
+        Plus = new javax.swing.JButton();
+        Cod = new javax.swing.JButton();
+        Transfer = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jLabel2.setText("jLabel2");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(990, 520, 34, 14);
+        Harga.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        getContentPane().add(Harga);
+        Harga.setBounds(980, 500, 300, 50);
 
-        jTextField1.setText("jTextField1");
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(750, 520, 60, 20);
+        Jumlah.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        Jumlah.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JumlahActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Jumlah);
+        Jumlah.setBounds(720, 500, 120, 60);
 
-        jButton1.setText("jButton1");
-        getContentPane().add(jButton1);
-        jButton1.setBounds(850, 520, 75, 23);
+        Plus.setBackground(java.awt.Color.gray);
+        Plus.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        Plus.setForeground(java.awt.SystemColor.controlLtHighlight);
+        Plus.setText("+");
+        Plus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PlusActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Plus);
+        Plus.setBounds(840, 500, 50, 60);
 
-        jButton2.setText("jButton2");
-        getContentPane().add(jButton2);
-        jButton2.setBounds(1110, 720, 75, 23);
+        Cod.setBackground(java.awt.Color.gray);
+        Cod.setForeground(java.awt.SystemColor.controlLtHighlight);
+        Cod.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Cod.png"))); // NOI18N
+        Cod.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CodActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Cod);
+        Cod.setBounds(1070, 660, 150, 150);
 
-        jButton3.setText("jButton3");
-        getContentPane().add(jButton3);
-        jButton3.setBounds(840, 720, 75, 23);
+        Transfer.setBackground(java.awt.Color.gray);
+        Transfer.setForeground(java.awt.SystemColor.controlLtHighlight);
+        Transfer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Tf.png"))); // NOI18N
+        Transfer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TransferActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Transfer);
+        Transfer.setBounds(780, 660, 150, 140);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/konfirmasi sw.png"))); // NOI18N
-        jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 1478, 840);
+        jLabel1.setBounds(0, 0, 1440, 840);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void PlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlusActionPerformed
+        // TODO add your handling code here:
+         int a1 = Integer.valueOf(Jumlah.getText());
+        int a2 = 8_400_000; // harga awal barang
+        int hasil = a1 * a2 ;
+        //input nilai
+        Harga.setText(String.valueOf(hasil));
+        if(a1 == 3){
+            JOptionPane.showMessageDialog(null,"Mohon Maaf jumlah barang yang anda input tidak cukup \n"
+                    +"Silahkan Coba Lagi");
+        }else;
+    }//GEN-LAST:event_PlusActionPerformed
+
+    private void TransferActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TransferActionPerformed
+        // TODO add your handling code here:
+        int a1 = Integer.valueOf(Jumlah.getText());
+        
+        if( a1 == 1){
+        new Per4().setVisible(true);
+        dispose();
+        }else if( a1 == 2){
+        new Permanen4().setVisible(true);
+        dispose();    
+        }else;
+    }//GEN-LAST:event_TransferActionPerformed
+
+    private void CodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CodActionPerformed
+        // TODO add your handling code here:
+        int a1 = Integer.valueOf(Jumlah.getText());
+        
+        if( a1 == 1){
+        new Per4().setVisible(true);
+        dispose();
+        }else if( a1 == 2){
+        new Permanen4().setVisible(true);
+        dispose();    
+        }else;
+    }//GEN-LAST:event_CodActionPerformed
+
+    private void JumlahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JumlahActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JumlahActionPerformed
 
     /**
      * @param args the command line arguments
@@ -100,11 +174,11 @@ public class Struk4 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton Cod;
+    private javax.swing.JLabel Harga;
+    private javax.swing.JTextField Jumlah;
+    private javax.swing.JButton Plus;
+    private javax.swing.JButton Transfer;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

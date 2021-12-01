@@ -29,31 +29,36 @@ public class Ipad extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Cek = new javax.swing.JButton();
         Kembali = new javax.swing.JButton();
+        Cek = new javax.swing.JButton();
         BackGround = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1440, 840));
-        setPreferredSize(new java.awt.Dimension(1440, 840));
         getContentPane().setLayout(null);
 
-        Cek.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CekActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Cek);
-        Cek.setBounds(1280, 730, 80, 70);
-
-        Kembali.setText("jButton1");
+        Kembali.setBackground(java.awt.Color.gray);
+        Kembali.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        Kembali.setForeground(java.awt.SystemColor.controlLtHighlight);
+        Kembali.setText("Kembali");
         Kembali.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 KembaliActionPerformed(evt);
             }
         });
         getContentPane().add(Kembali);
-        Kembali.setBounds(910, 800, 73, 23);
+        Kembali.setBounds(1160, 760, 73, 30);
+
+        Cek.setBackground(java.awt.Color.gray);
+        Cek.setForeground(java.awt.SystemColor.controlLtHighlight);
+        Cek.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Ceklis.png"))); // NOI18N
+        Cek.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CekActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Cek);
+        Cek.setBounds(1260, 700, 110, 110);
 
         BackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Beliipad.png"))); // NOI18N
         getContentPane().add(BackGround);
@@ -65,7 +70,7 @@ public class Ipad extends javax.swing.JFrame {
 
     private void CekActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CekActionPerformed
         // TODO add your handling code here:
-        new Struk1().setVisible(true);
+        new Struk5().setVisible(true);
         dispose();
     }//GEN-LAST:event_CekActionPerformed
 

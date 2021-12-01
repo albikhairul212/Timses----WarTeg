@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package Barang;
+import StrukConfirm.*;
+import Interface.HalamanAwal;
 
 /**
  *
@@ -26,27 +28,58 @@ public class Laptop extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Kembali = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1440, 840));
+        setMinimumSize(new java.awt.Dimension(1440, 840));
+        setPreferredSize(new java.awt.Dimension(1440, 840));
         getContentPane().setLayout(null);
 
-        jButton1.setText("jButton1");
-        getContentPane().add(jButton1);
-        jButton1.setBounds(1290, 750, 75, 23);
+        Kembali.setBackground(java.awt.Color.gray);
+        Kembali.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        Kembali.setForeground(java.awt.SystemColor.controlLtHighlight);
+        Kembali.setText("Kembali");
+        Kembali.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                KembaliActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Kembali);
+        Kembali.setBounds(1170, 750, 73, 21);
 
-        jButton2.setText("jButton2");
-        getContentPane().add(jButton2);
-        jButton2.setBounds(1290, 810, 75, 23);
+        jButton1.setBackground(java.awt.Color.gray);
+        jButton1.setForeground(java.awt.SystemColor.controlLtHighlight);
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Ceklis.png"))); // NOI18N
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(1270, 700, 110, 110);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Beli Laptop.png"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 1440, 840);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void KembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KembaliActionPerformed
+        // TODO add your handling code here:
+        new HalamanAwal().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_KembaliActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        new Struk1().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -84,8 +117,8 @@ public class Laptop extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Kembali;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

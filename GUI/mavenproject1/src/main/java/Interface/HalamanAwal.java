@@ -49,8 +49,8 @@ public class HalamanAwal extends javax.swing.JFrame {
         ButtonUsb = new javax.swing.JButton();
         ButtonKamera = new javax.swing.JButton();
         ButtonKomputer = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         Profil = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setIconImages(null);
@@ -132,34 +132,38 @@ public class HalamanAwal extends javax.swing.JFrame {
         getContentPane().add(ButtonKomputer);
         ButtonKomputer.setBounds(1330, 720, 50, 50);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Tampilan Awal 1440 x 840.png"))); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 1440, 840);
-
-        Profil.setText("Profil");
+        Profil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/pp.png"))); // NOI18N
         Profil.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ProfilActionPerformed(evt);
             }
         });
         getContentPane().add(Profil);
-        Profil.setBounds(1290, 120, 140, 110);
+        Profil.setBounds(1310, 120, 110, 110);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Tampilan Awal 1440 x 840.png"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 1440, 840);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void ButtonIphoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonIphoneActionPerformed
         // TODO add your handling code here:
-       
+       new Iphone().setVisible(true);
+       dispose();
     }//GEN-LAST:event_ButtonIphoneActionPerformed
 
     private void ButtonJamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonJamActionPerformed
         // TODO add your handling code here:
-        
+        new Sw().setVisible(true);
+        dispose();
     }//GEN-LAST:event_ButtonJamActionPerformed
 
     private void ButtonUsbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonUsbActionPerformed
         // TODO add your handling code here:
+        new Usb().setVisible(true);
+        dispose();
       
     }//GEN-LAST:event_ButtonUsbActionPerformed
 
@@ -171,22 +175,28 @@ public class HalamanAwal extends javax.swing.JFrame {
 
     private void ButtonKameraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonKameraActionPerformed
         // TODO add your handling code here:
-      
+        new Kamera().setVisible(true);
+        dispose();
     }//GEN-LAST:event_ButtonKameraActionPerformed
 
     private void ButtonLaptopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonLaptopActionPerformed
         // TODO add your handling code here:
+        new Laptop().setVisible(true);
+        dispose();
         
     }//GEN-LAST:event_ButtonLaptopActionPerformed
 
     private void ButtonKomputerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonKomputerActionPerformed
         // TODO add your handling code here:
+        new Pc().setVisible(true);
+        dispose();
         
     }//GEN-LAST:event_ButtonKomputerActionPerformed
 
     private void ButtonPsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonPsActionPerformed
         // TODO add your handling code here:
-        
+        new Ps().setVisible(true);
+        dispose();
     }//GEN-LAST:event_ButtonPsActionPerformed
 
     private void ProfilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProfilActionPerformed
@@ -195,41 +205,7 @@ public class HalamanAwal extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_ProfilActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(HalamanAwal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(HalamanAwal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(HalamanAwal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(HalamanAwal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new HalamanAwal().setVisible(true);
-                
-            }
-        });
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ButtonIpad;
