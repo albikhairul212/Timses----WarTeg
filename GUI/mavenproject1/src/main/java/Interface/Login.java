@@ -201,6 +201,16 @@ public class Login extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_PasswordFocusLost
 
+    private void showPasswordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_showPasswordMouseClicked
+        if(showPassword.getText().equals("Show Password")){
+            showPassword.setText("Hide Password");
+            password.setEchoChar((char)0);
+        }else{
+            showPassword.setText("Show Password");
+            password.setEchoChar('*');
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_showPasswordMouseClicked
+
     /**
      * @param args the command line arguments
      */
