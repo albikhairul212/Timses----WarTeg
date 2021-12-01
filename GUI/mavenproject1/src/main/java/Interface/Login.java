@@ -177,14 +177,14 @@ public class Login extends javax.swing.JFrame {
 
     private void ShowPasswordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ShowPasswordMouseClicked
         // TODO add your handling code here:
-     if(ShowPassword.getText().equals("Show Password")){
+    if(ShowPassword.getText().equals("Show Password")){
             ShowPassword.setText("Hide Password");
             Password.setEchoChar((char)0);
         }else{
             ShowPassword.setText("Show Password");
             Password.setEchoChar('*');
         }   
-     
+    
     }//GEN-LAST:event_ShowPasswordMouseClicked
 
     private void PasswordFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_PasswordFocusGained
@@ -202,12 +202,12 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_PasswordFocusLost
 
     private void showPasswordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_showPasswordMouseClicked
-        if(showPassword.getText().equals("Show Password")){
-            showPassword.setText("Hide Password");
-            password.setEchoChar((char)0);
+        if(ShowPassword.getText().equals("Show Password")){
+            ShowPassword.setText("Hide Password");
+            Password.setEchoChar((char)0);
         }else{
-            showPassword.setText("Show Password");
-            password.setEchoChar('*');
+            ShowPassword.setText("Show Password");
+            Password.setEchoChar('*');
         }        // TODO add your handling code here:
     }//GEN-LAST:event_showPasswordMouseClicked
 
