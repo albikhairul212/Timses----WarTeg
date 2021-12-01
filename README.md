@@ -15,9 +15,9 @@ Nama Anggota
 --  Khairul Umam Albi (CEO) 2008107010072
 
 
-2008107010012_Rizka Nuzulia
-2008107010060 Dita Anatasya
-2008107010057_Stefhani Alba Siregar
-2008107010004_Teuku Nabil Muhammad Dhuha
-2008107010001_Farida Mandani
+Rizka Nuzulia (2008107010012)
+Dita Anatasya (2008107010060)
+Stefhani Alba Siregar (2008107010057)
+Teuku Nabil Muhammad Dhuha (2008107010004)
+Farida Mandani (2008107010001)
 
