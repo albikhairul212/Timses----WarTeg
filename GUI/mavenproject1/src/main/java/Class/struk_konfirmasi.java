@@ -1,4 +1,4 @@
-public class Struk_Konfirmasi {
+public class struk_konfirmasi {
 
     private double Produk;
     private double OngkosKirim;

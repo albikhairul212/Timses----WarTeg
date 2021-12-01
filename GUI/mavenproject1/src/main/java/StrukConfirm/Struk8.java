@@ -38,6 +38,9 @@ public class Struk8 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1440, 840));
+        setMinimumSize(new java.awt.Dimension(1440, 840));
+        setPreferredSize(new java.awt.Dimension(1440, 840));
         getContentPane().setLayout(null);
 
         Harga.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
