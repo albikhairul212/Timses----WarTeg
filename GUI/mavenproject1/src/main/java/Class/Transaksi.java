@@ -1,7 +1,5 @@
+public class Transaksi extends HalamanUtama1{
 
-package Class;
-
-public class transaksi1 {
     private String idTransaksi;
     private String idPembeli;
     private double uang;
@@ -36,3 +34,4 @@ public class transaksi1 {
     }
 
 }
+

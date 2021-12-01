@@ -1,6 +1,4 @@
-package Class;
-
-public class struk_permanen_1 {
+public class struk_permanen_2 {
     private String idTransaksi;
     private String idPembeli;
     private String resi;
@@ -10,7 +8,7 @@ public class struk_permanen_1 {
 
     public String Transaksi(){
        return idTransaksi;
-       
+        
     }
 
     public void Transaksi(String idTransaksi, String idPembeli){

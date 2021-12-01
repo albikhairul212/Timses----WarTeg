@@ -10,7 +10,7 @@ public class struk_permanen {
 
     public String Transaksi(){
     return idTransaksi;
-    return idPembeli; 
+    
     }
 
     public void Transaksi(String idTransaksi, String idPembeli){
