@@ -27,7 +27,6 @@ public class ProfilUser extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        Submit = new javax.swing.JButton();
         Rekening = new javax.swing.JLabel();
         BirthDay = new javax.swing.JLabel();
         Password = new javax.swing.JLabel();
@@ -37,6 +36,7 @@ public class ProfilUser extends javax.swing.JFrame {
         Username = new javax.swing.JLabel();
         Foto = new javax.swing.JLabel();
         Profil = new javax.swing.JLabel();
+        Submit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(997, 744));
@@ -44,15 +44,6 @@ public class ProfilUser extends javax.swing.JFrame {
 
         jPanel1.setPreferredSize(new java.awt.Dimension(1980, 1080));
         jPanel1.setLayout(null);
-
-        Submit.setText("Submit");
-        Submit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SubmitActionPerformed(evt);
-            }
-        });
-        jPanel1.add(Submit);
-        Submit.setBounds(620, 640, 130, 40);
 
         Rekening.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         Rekening.setText("1122334455667788");
@@ -90,15 +81,21 @@ public class ProfilUser extends javax.swing.JFrame {
         Username.setBounds(498, 124, 410, 40);
 
         Foto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/github.png"))); // NOI18N
-        Foto.setMaximumSize(new java.awt.Dimension(360, 360));
-        Foto.setMinimumSize(new java.awt.Dimension(360, 360));
-        Foto.setPreferredSize(new java.awt.Dimension(360, 360));
         jPanel1.add(Foto);
         Foto.setBounds(60, 110, 350, 340);
 
         Profil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Profil.png"))); // NOI18N
         jPanel1.add(Profil);
         Profil.setBounds(-30, -10, 997, 711);
+
+        Submit.setText("Submit");
+        Submit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SubmitActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Submit);
+        Submit.setBounds(620, 640, 130, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

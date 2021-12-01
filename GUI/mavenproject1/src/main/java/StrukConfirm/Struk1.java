@@ -26,15 +26,41 @@ public class Struk1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTextField1 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        Background = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1440, 840));
         getContentPane().setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/konfirmasi.png"))); // NOI18N
+        jTextField1.setText("jTextField1");
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(720, 480, 120, 60);
+
+        jButton1.setText("jButton1");
+        getContentPane().add(jButton1);
+        jButton1.setBounds(840, 490, 50, 40);
+
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 1440, 1000);
+        jLabel1.setBounds(980, 490, 310, 50);
+
+        Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/konfirmasiLaptop.png"))); // NOI18N
+        Background.setPreferredSize(new java.awt.Dimension(1440, 840));
+        getContentPane().add(Background);
+        Background.setBounds(0, 0, 1440, 840);
+
+        jButton2.setText("jButton2");
+        getContentPane().add(jButton2);
+        jButton2.setBounds(800, 710, 75, 23);
+
+        jButton3.setText("jButton3");
+        getContentPane().add(jButton3);
+        jButton3.setBounds(1120, 710, 75, 23);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -75,6 +101,11 @@ public class Struk1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Background;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

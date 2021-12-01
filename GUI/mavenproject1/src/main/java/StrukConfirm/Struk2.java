@@ -3,6 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package StrukConfirm;
+import SHarga1.*;
+import SHarga2.*;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -26,21 +29,97 @@ public class Struk2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        Plus = new javax.swing.JButton();
+        Harga = new javax.swing.JLabel();
+        Cod = new javax.swing.JButton();
+        Trans = new javax.swing.JButton();
+        Jumlah = new javax.swing.JTextField();
+        Background = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
+
+        Plus.setText("+");
+        Plus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PlusActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Plus);
+        Plus.setBounds(850, 500, 40, 50);
+
+        Harga.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        Harga.setText("11");
+        getContentPane().add(Harga);
+        Harga.setBounds(1000, 500, 330, 60);
+
+        Cod.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CodActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Cod);
+        Cod.setBounds(790, 690, 120, 70);
+
+        Trans.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TransActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Trans);
+        Trans.setBounds(1090, 690, 120, 70);
+
+        Jumlah.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JumlahActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Jumlah);
+        Jumlah.setBounds(720, 500, 130, 50);
+
+        Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/konfirmasi IPAD.png"))); // NOI18N
+        getContentPane().add(Background);
+        Background.setBounds(0, 0, 1440, 840);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void TransActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TransActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TransActionPerformed
+
+    private void PlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlusActionPerformed
+        // TODO add your handling code here:
+        //variables
+        int a1 = Integer.valueOf(Jumlah.getText());
+        int a2 = 15_725_000;
+        int hasil = a1 * a2 ;
+        //input nilai
+        Harga.setText(String.valueOf(hasil));
+        if(a1 == 3){
+            JOptionPane.showMessageDialog(null,"Mohon Maaf jumlah barang yang anda input tidak cukup \n"
+                    +"Silahkan Coba Lagi");
+        }else;
+        
+    }//GEN-LAST:event_PlusActionPerformed
+
+    private void JumlahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JumlahActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_JumlahActionPerformed
+
+    private void CodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CodActionPerformed
+        // TODO add your handling code here:
+        int a1 = Integer.valueOf(Jumlah.getText());
+        
+        if( a1 == 1){
+        new Per1().setVisible(true);
+        dispose();
+        }else if( a1 == 2){
+        new Permanen1().setVisible(true);
+        dispose();    
+        }
+    }//GEN-LAST:event_CodActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +157,11 @@ public class Struk2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Background;
+    private javax.swing.JButton Cod;
+    private javax.swing.JLabel Harga;
+    private javax.swing.JTextField Jumlah;
+    private javax.swing.JButton Plus;
+    private javax.swing.JButton Trans;
     // End of variables declaration//GEN-END:variables
 }

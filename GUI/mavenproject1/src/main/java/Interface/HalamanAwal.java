@@ -5,6 +5,7 @@
 
 package Interface;
 import StrukConfirm.*;
+import Barang.*;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -49,6 +50,7 @@ public class HalamanAwal extends javax.swing.JFrame {
         ButtonKamera = new javax.swing.JButton();
         ButtonKomputer = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        Profil = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setIconImages(null);
@@ -134,56 +136,64 @@ public class HalamanAwal extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 1440, 840);
 
+        Profil.setText("Profil");
+        Profil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ProfilActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Profil);
+        Profil.setBounds(1290, 120, 140, 110);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void ButtonIphoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonIphoneActionPerformed
         // TODO add your handling code here:
-        new Struk2().setVisible(true);
-        dispose();
+       
     }//GEN-LAST:event_ButtonIphoneActionPerformed
 
     private void ButtonJamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonJamActionPerformed
         // TODO add your handling code here:
-        new Struk4().setVisible(true);
-        dispose();
+        
     }//GEN-LAST:event_ButtonJamActionPerformed
 
     private void ButtonUsbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonUsbActionPerformed
         // TODO add your handling code here:
-        new Struk6().setVisible(true);
-        dispose();
+      
     }//GEN-LAST:event_ButtonUsbActionPerformed
 
     private void ButtonIpadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonIpadActionPerformed
         // TODO add your handling code here:
-        new Struk5().setVisible(true);
+        new Ipad().setVisible(true);
         dispose();
     }//GEN-LAST:event_ButtonIpadActionPerformed
 
     private void ButtonKameraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonKameraActionPerformed
         // TODO add your handling code here:
-        new Struk7().setVisible(true);
-        dispose();
+      
     }//GEN-LAST:event_ButtonKameraActionPerformed
 
     private void ButtonLaptopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonLaptopActionPerformed
         // TODO add your handling code here:
-        new Struk1().setVisible(true);
-        dispose();
+        
     }//GEN-LAST:event_ButtonLaptopActionPerformed
 
     private void ButtonKomputerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonKomputerActionPerformed
         // TODO add your handling code here:
-        new Struk8().setVisible(true);
-        dispose();
+        
     }//GEN-LAST:event_ButtonKomputerActionPerformed
 
     private void ButtonPsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonPsActionPerformed
         // TODO add your handling code here:
-        new Struk3().setVisible(true);
-        dispose();
+        
     }//GEN-LAST:event_ButtonPsActionPerformed
+
+    private void ProfilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProfilActionPerformed
+        // TODO add your handling code here:
+        new ProfilUser().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_ProfilActionPerformed
 
     /**
      * @param args the command line arguments
@@ -230,6 +240,7 @@ public class HalamanAwal extends javax.swing.JFrame {
     private javax.swing.JButton ButtonLaptop;
     private javax.swing.JButton ButtonPs;
     private javax.swing.JButton ButtonUsb;
+    private javax.swing.JButton Profil;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
